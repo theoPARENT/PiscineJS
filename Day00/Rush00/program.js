@@ -1,7 +1,7 @@
-console.log(sun([3,5,6,1,2,4,3], 'Ouest'))
+console.log(program([3,5,6,1,2,4,3], 'Ouest'))
 
 
-function sun(buildings, direction){
+function program(buildings, direction){
     let length = buildings.length
     let result = []
     let tamp = null
@@ -34,8 +34,8 @@ function sun(buildings, direction){
             }
         }
     }
-    return result
+    return result.sort()
 }
 
 // Merci de ne pas effacer la ligne en dessous.
-exports.sun = sun ;
+exports.sun = program ;
