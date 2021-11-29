@@ -1,4 +1,4 @@
-console.log(firstNonRepeatedCharacter('abcdcabf'))
+console.log(firstNonRepeatedCharacter('abcdabcd'))
 
 
 function firstNonRepeatedCharacter(string) {
@@ -8,5 +8,5 @@ function firstNonRepeatedCharacter(string) {
             return i;
         }
     }
-    return null;
+    return -1;
 }
