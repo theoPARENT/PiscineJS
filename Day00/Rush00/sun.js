@@ -5,7 +5,7 @@ function sun(buildings, direction){
     let length = buildings.length
     let result = []
     let tamp = null
-    if (direction.toLowerCase() === 'Ouest') {
+    if (direction.toLowerCase() === 'ouest') {
         result.push(0)
         for (let i=1;i<length;i++) {
             if ( tamp !== null) {
@@ -19,7 +19,7 @@ function sun(buildings, direction){
                 tamp = i-1
             }
         }
-    } else if (direction.toLowerCase() === 'Est') {
+    } else if (direction.toLowerCase() === 'est') {
         result.push(length-1)
         for (let i=length-2;i>=0;i--) {
             if ( tamp !== null) {
