@@ -18,7 +18,7 @@ function twoNumberSum (array, targetSum) {
                 if ((value + value2) == targetSum) {
                     let tab = [value, value2]
 
-                    result.push(tab)
+                    result.push(value,value2)
 
                 }
             }
