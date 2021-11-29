@@ -1,11 +1,11 @@
-console.log(program([3,5,6,1,2,4,3], 'Ouest'))
+console.log(program([3,5,4,4,3,1,3,2], 'east'))
 
 
 function program(buildings, direction){
     let length = buildings.length
     let result = []
     let tamp = null
-    if (direction.toLowerCase() === 'ouest') {
+    if (direction.toLowerCase() === 'west') {
         result.push(0)
         for (let i=1;i<length;i++) {
             if ( tamp !== null) {
@@ -19,7 +19,7 @@ function program(buildings, direction){
                 tamp = i-1
             }
         }
-    } else if (direction.toLowerCase() === 'est') {
+    } else if (direction.toLowerCase() === 'east') {
         result.push(length-1)
         for (let i=length-2;i>=0;i--) {
             if ( tamp !== null) {
