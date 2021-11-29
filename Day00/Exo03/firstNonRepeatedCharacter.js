@@ -1,4 +1,4 @@
-firstNonRepeatedCharacter('abcddaaaabbads')
+console.log(firstNonRepeatedCharacter('testabctest'))
 
 
 function firstNonRepeatedCharacter(string) {
