@@ -16,10 +16,7 @@ function twoNumberSum (array, targetSum) {
         array.forEach(function (value2, j) {
             if (i !== j) {
                 if ((value + value2) == targetSum) {
-                    let tab = [value, value2]
-
                     result.push(value,value2)
-
                 }
             }
         })

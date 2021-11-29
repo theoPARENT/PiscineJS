@@ -1,4 +1,4 @@
-test = "xannax"
+test = "kayak"
 
 result = isPalindrome(test)
 
