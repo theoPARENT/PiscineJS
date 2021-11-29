@@ -14,6 +14,7 @@ function threeLargestNumbers(array){
         function compare(x, y) {
             return y - x;
         }
+        return [result[0],result[1],result[2]]
     }
 }
 
