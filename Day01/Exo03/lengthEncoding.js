@@ -1,12 +1,21 @@
+console.log(runLengthEncoding('AAAAAAAAAAAAABBCCCCDD'))
 
-
-const runLengthEncode = string => string.replace(/(.)\1+/g, ({ length }, char) => length + char);
-
-console.log(runLengthEncode("AAAAAAAAAAA"))
-
-const RLE = {
-    encode: str => str.replace(/(\w)\1+/g, (m, c) => `${9}${c}`),
-    decode: str => str.replace(/(\d+)(\w)/g, (_, d, c) => c.repeat(d))
+function runLengthEncoding(string) {
+    let result = "";
+    let letter = string[0];
+    let letterCount = 1;
+    for (let i = 1; i < string.length + 1; i++) {
+        console.log(result)
+        if (string[i] === letter && letterCount < 9) {
+            letterCount++;
+        } else {
+            result += letterCount + letter;
+            letter = string[i]
+            letterCount = 1;
+        }
+    }
+    return result
 }
 
-console.log(RLE.encode("AAAAAAAAAAA"))
+// Merci de ne pas effacer la ligne en dessous.
+exports.runLengthEncoding = runLengthEncoding;AAA"))
