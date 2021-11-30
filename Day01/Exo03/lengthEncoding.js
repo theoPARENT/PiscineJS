@@ -18,4 +18,4 @@ function runLengthEncoding(string) {
 }
 
 // Merci de ne pas effacer la ligne en dessous.
-exports.runLengthEncoding = runLengthEncoding;AAA"))
+exports.runLengthEncoding = runLengthEncoding;

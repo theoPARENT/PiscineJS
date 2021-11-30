@@ -1,13 +1,11 @@
-console.log(firstDuplicateValue([ 1, 2, 3, 4, 5, 2]))
+console.log(firstDuplicateValue([2,1,5,3,3,2,4]))
 
 function firstDuplicateValue(arrayInt) {
     let duplicate = null
 
     arrayInt.forEach(function (value1, i) {
+        if (duplicate !== null) return duplicate
         arrayInt.forEach(function (value2, j){
-            if (duplicate) {
-                return duplicate
-            }
             if (i !== j) {
                 if (value1 == value2) {
                     duplicate = value2
